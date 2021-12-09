@@ -14,7 +14,7 @@ function EmbedExpression() {
     <div>
       <p>
         Welcome to {companyName}
-        Class {getMajor()}
+        Class <h1> {getMajor()}</h1>
       </p>
     </div>
   );
