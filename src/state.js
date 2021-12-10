@@ -6,14 +6,24 @@ function State() {
 
   //Create Function Add
   function Add() {
-
+    setCounter(counter + 1)
   }
 
   //Create Function Less
+  function Less() {
+    setCounter(counter - 1)
+  }
 
   return (
     // Code Inside div
-    <div></div>
+    <div>
+      <p>If you click the add button it will increase by one</p>
+
+      <h2>{counter}</h2>
+
+      <button onClick={Add}>Add</button>
+      <button onClick={Less}>Less</button>
+    </div>
   );
 }
 
